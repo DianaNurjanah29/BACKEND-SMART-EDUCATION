@@ -3,7 +3,7 @@ const router = express.Router();
 const Controller = require("../controllers/soal.controller");
 
 router.post('/add',Controller.addsoal);
-router.get('/get',Controller.getsoal);
+router.post('/get',Controller.getsoal);
 router.post('/getsoal',Controller.getsoalbynmr)
 router.post('/cekjawaban',Controller.cekjawaban);
 router.delete('/delete/:guid',Controller.deletesoal);

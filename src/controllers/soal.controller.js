@@ -21,6 +21,8 @@ exports.addsoal = async (req, res) => {
 
 //get level
 exports.getsoal = async (req, res, next) => {
+  console.log("Get Soal")
+  console.log(req.body)
   const { page, limit } = req.body;
   try {
     const data = await Model.find()
